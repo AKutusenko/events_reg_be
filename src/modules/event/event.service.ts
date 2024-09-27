@@ -19,7 +19,7 @@ export class EventService {
     private readonly eventRepository: Repository<Event>,
 
     @InjectRepository(Participant)
-    private readonly participantRepository: Repository<Participant>, // This is likely the missing part
+    private readonly participantRepository: Repository<Participant>,
   ) { }
 
   async createEvent(data: EventCreateDto): Promise<EventResponseDto> {
