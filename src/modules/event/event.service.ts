@@ -61,7 +61,7 @@ export class EventService {
 
   async findAll(
     page: number = 1,
-    limit: number = 10,
+    limit: number = 12,
     sortBy: EventSortBy = EventSortBy.TITLE,
     order: EventSortOrder = EventSortOrder.ASC,
   ): Promise<PaginatedEventsResponseDto> {
